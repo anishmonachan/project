@@ -1,14 +1,12 @@
 #include <ros/ros.h>
 #include <geometry_msgs/Twist.h>
-#include <obstacle_detector/Obstacles.h>
+#include <obstacle_detector>
 
 double x_d, y_d,theta_d;
 
 double forward_control = 0.0;
 double orientation_control = 0.0;
 double k_pf, k_po;
-
-
 
 
 void poseCallback(const geometry_msgs::Pose::ConstPtr& pose_msg)
