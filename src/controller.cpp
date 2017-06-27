@@ -11,7 +11,7 @@ double k_pf, k_po;
 
 
 
-void poseCallback(const obstacle_detector::Pose::ConstPtr& pose_msg)
+void poseCallback(const geometry_msgs::Pose::ConstPtr& pose_msg)
 {
   double x_error = x_d - pose_msg->x;
   double y_error = y_d - pose_msg->y;
